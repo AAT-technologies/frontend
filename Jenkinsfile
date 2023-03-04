@@ -10,7 +10,6 @@ pipeline {
           '''
          
          sh ''' cd app-front/frontend
-                   ls
                    sudo docker build -t delalixx/frontend .
                    sudo docker push delalixx/frontend
                    '''
