@@ -21,7 +21,7 @@ pipeline {
     }
      stage ('Create Deploy to Yaml file') {
        steps {
-         sh ''' ls
+         sh ''' ls -la
          '''
            withCredentials([aws(credentialsId: 'aws-credentials', region: 'ca-central-1')]) {
            sh 'kubectl version --client --output=yaml'
