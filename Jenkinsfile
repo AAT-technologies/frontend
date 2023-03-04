@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('Testing') {
       steps {
-          git branch: 'dev', credentialsId: 'for-git', url: 'https://github.com/AAT-technologies/frontend.git'
+          git branch: 'staging', credentialsId: 'for-git', url: 'https://github.com/AAT-technologies/frontend.git'
           sh ''' sudo docker login -u delalixx -p dckr_pat_-dfSKHYHBVZNLTVX1R5sxmNGJwo
           '''
           sh ''' sudo docker system prune -af
