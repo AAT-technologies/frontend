@@ -48,7 +48,7 @@ spec:
                 - all
             privileged: false
             readOnlyRootFilesystem: true
-          image: delalixx/frontend:latest
+          image: delalixx/frontend:v1
           ports:
           - containerPort: 8080
           readinessProbe:
