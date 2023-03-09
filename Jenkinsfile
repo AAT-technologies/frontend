@@ -11,8 +11,8 @@ pipeline {
          
          sh ''' cd app-front/frontend
                    ls
-                   sudo docker build -t delalixx/v1 .
-                   sudo docker push delalixx/v1
+                   sudo docker build -t delalixx/frontend:v1 .
+                   sudo docker push delalixx/frontend:v1
                    '''
          sh ''' sudo docker system prune -af
                   '''
